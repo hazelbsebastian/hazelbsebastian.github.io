@@ -1,14 +1,12 @@
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #fbf9f6;
-  --text: #1a1917;
-  --muted: #6e6a63;
-  --line: #d9d4cc;
-  --tint: #ebe7e1;
-  --draw-accent: #dcc6ae;
-  --draw-accent-alt: #c4cbb6;
-  --accent: #1a1917;
-  --accent-text: #fbf9f6;
+  --bg: #f7eedc;
+  --text: #211c18;
+  --muted: #6a6258;
+  --line: #dfd2b8;
+  --tint: #efe3cb;
+  --accent: #5a52a3;
+  --accent-text: #f7eedc;
 
   --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,28 +18,24 @@
 /* Dark: follows the device setting unless the toggle has picked a theme */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141413;
-    --text: #edebe6;
-    --muted: #9c9992;
-    --line: #34322f;
-    --tint: #22211f;
-    --draw-accent: #5e4d3d;
-    --draw-accent-alt: #4a5244;
-    --accent: #edebe6;
-    --accent-text: #141413;
+    --bg: #1a1714;
+    --text: #f3ead8;
+    --muted: #a89f92;
+    --line: #3a342d;
+    --tint: #26221d;
+    --accent: #aba4ee;
+    --accent-text: #1a1714;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #141413;
-  --text: #edebe6;
-  --muted: #9c9992;
-  --line: #34322f;
-  --tint: #22211f;
-  --draw-accent: #5e4d3d;
-  --draw-accent-alt: #4a5244;
-  --accent: #edebe6;
-  --accent-text: #141413;
+  --bg: #1a1714;
+  --text: #f3ead8;
+  --muted: #a89f92;
+  --line: #3a342d;
+  --tint: #26221d;
+  --accent: #aba4ee;
+  --accent-text: #1a1714;
 }
 
 /* ---------- Base ---------- */
@@ -99,7 +93,7 @@ a:focus-visible {
   margin: 0 auto;
   padding: 18px var(--gutter);
   background: var(--bg);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1.5px solid var(--text);
 }
 
 .brand {
@@ -131,37 +125,91 @@ a:focus-visible {
   color: var(--text);
 }
 
+/* The link for the section currently in view */
+.site-header nav a.is-active {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+}
+
 .site-header nav .nav-cta {
   padding: 8px 22px;
-  color: var(--text);
-  border: 1px solid var(--text);
+  background: var(--accent);
+  color: var(--accent-text);
+  border: 1px solid var(--accent);
 }
 
-.site-header nav .nav-cta:hover {
-  background: var(--text);
-  color: var(--bg);
+.site-header nav .nav-cta:hover,
+.site-header nav .nav-cta.is-active {
+  background: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.theme-toggle {
-  display: grid;
+/* Menu button, shown only on small screens */
+.menu-toggle {
+  display: none;
   place-items: center;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   background: none;
-  color: var(--muted);
+  color: var(--text);
   border: 0;
+  cursor: pointer;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.menu-toggle .icon-close,
+.site-header.is-open .menu-toggle .icon-open {
+  display: none;
+}
+
+.site-header.is-open .menu-toggle .icon-close {
+  display: block;
+}
+
+/* Theme toggle and back-to-top, pinned to the bottom right corner */
+.floating-actions {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: var(--bg);
+  color: var(--muted);
+  border: 1.5px solid var(--text);
   border-radius: 50%;
   cursor: pointer;
   transition: color 0.15s ease, background-color 0.15s ease;
 }
 
-.theme-toggle:hover {
+.float-button[hidden] {
+  display: none;
+}
+
+.float-button:hover {
   color: var(--text);
   background: var(--tint);
 }
 
-.theme-toggle:focus-visible {
+.float-button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
@@ -176,16 +224,16 @@ main,
 
 section {
   padding: 72px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1.5px solid var(--text);
 }
 
 h2 {
   margin-bottom: 36px;
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.6vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 h3 {
@@ -198,130 +246,15 @@ h3 {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 40px 0 0;
+  padding: 96px 0 40px;
   border-bottom: 0;
 }
 
-.hero-word {
-  position: relative;
-  z-index: 1;
-  font-family: var(--serif);
-  font-size: clamp(3.4rem, 16.5vw, 11rem);
-  font-weight: 400;
-  line-height: 0.85;
-  letter-spacing: -0.02em;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: end;
-  gap: 40px;
-  margin-top: -0.6em;
-  font-size: clamp(3.4rem, 16.5vw, 11rem);
-}
-
-.hero-text {
-  padding-bottom: 8px;
-  font-size: 1rem;
-}
-
-.hero-photo {
-  aspect-ratio: 4 / 5;
-  background: var(--tint);
-  overflow: hidden;
-}
-
-.hero-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Line drawing that draws itself in, then fades in its color */
-.drawing {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: var(--text);
-}
-
-.drawing .draw {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: draw 1.4s ease forwards;
-  animation-delay: var(--d, 0s);
-}
-
-.drawing .fill {
-  fill: var(--draw-accent);
-  opacity: 0;
-  animation: fade-in 0.8s ease forwards;
-  animation-delay: var(--d, 3s);
-}
-
-.drawing .fill-alt {
-  fill: var(--draw-accent-alt);
-}
-
-.drawing .steam {
-  animation: draw 1.4s ease forwards, steam 3s ease-in-out infinite;
-  animation-delay: var(--d, 0s), 4s;
-}
-
-.drawing .cursor {
-  fill: var(--text);
-  opacity: 0;
-  transform-box: fill-box;
-  transform-origin: top left;
-  animation: fade-in 0.4s ease 3.6s forwards, tap 2.4s ease-in-out 4.2s infinite;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fade-in {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes steam {
-  0%, 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.3;
-    transform: translateY(-4px);
-  }
-}
-
-@keyframes tap {
-  0%, 70%, 100% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(0.85);
-  }
-}
-
 h1 {
+  color: var(--accent);
   font-family: var(--serif);
-  font-size: clamp(2rem, 4.4vw, 2.8rem);
-  font-weight: 500;
+  font-size: clamp(2.4rem, 6.4vw, 4rem);
+  font-weight: 700;
   line-height: 1.05;
   text-transform: uppercase;
 }
@@ -351,7 +284,7 @@ h1 {
 .page-title {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
   text-transform: none;
 }
@@ -361,8 +294,9 @@ h1 {
   margin-top: 32px;
   padding: 16px 0;
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
+  border-top: 1.5px solid var(--text);
+  border-bottom: 1.5px solid var(--text);
+  color: var(--text);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -377,7 +311,7 @@ h1 {
 .marquee span::after {
   content: "/";
   margin: 0 20px;
-  color: var(--line);
+  color: var(--text);
 }
 
 @keyframes marquee {
@@ -396,6 +330,7 @@ h1 {
 
 .stats strong {
   display: block;
+  color: var(--accent);
   font-family: var(--serif);
   font-size: 2.4rem;
   font-weight: 500;
@@ -425,7 +360,9 @@ h1 {
 .button {
   display: inline-block;
   padding: 14px 40px;
-  border: 1px solid var(--text);
+  background: var(--accent);
+  color: var(--accent-text);
+  border: 1px solid var(--accent);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-decoration: none;
@@ -434,8 +371,8 @@ h1 {
 }
 
 .button:hover {
-  background: var(--text);
-  color: var(--bg);
+  background: none;
+  color: var(--accent);
 }
 
 .text-link {
@@ -497,7 +434,7 @@ h1 {
 
 .page-title {
   max-width: none;
-  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .collection {
@@ -508,13 +445,8 @@ h1 {
 
 .collection-title {
   margin-bottom: 12px;
-  color: var(--text);
-  font-family: var(--serif);
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0;
-  text-transform: none;
+  font-size: 1.7rem;
+  line-height: 1.15;
 }
 
 .collection-note {
@@ -534,6 +466,10 @@ h1 {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  /* Room for the hover scale, which the scroll container would otherwise clip */
+  margin: -12px;
+  padding: 12px;
+  scroll-padding-inline: 12px;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -544,6 +480,12 @@ h1 {
   display: block;
   scroll-snap-align: start;
   text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.gallery-item:hover,
+.gallery-item:focus-visible {
+  transform: scale(1.05);
 }
 
 .gallery-item img {
@@ -554,11 +496,35 @@ h1 {
   object-fit: cover;
   border-radius: 14px;
   background: var(--line);
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.gallery-item--wide img {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-item--tall img {
+  aspect-ratio: 1024 / 1453;
+}
+
+/* Transparent logo artwork shows the page background behind it */
+.gallery-item--logo img {
+  object-fit: contain;
+  background: none;
+}
+
+.carousel-controls[hidden] {
+  display: none;
 }
 
 .gallery-item:hover img {
   opacity: 0.85;
+}
+
+/* Thin border drawn as a shadow so the card doesn't shift */
+.gallery-item:hover img,
+.gallery-item:focus-visible img {
+  box-shadow: 0 0 0 1.5px var(--text);
 }
 
 .gallery-item h3 {
@@ -587,9 +553,9 @@ h1 {
   width: 36px;
   height: 36px;
   padding: 0 0 3px;
-  background: var(--text);
-  color: var(--bg);
-  border: 1px solid var(--text);
+  background: var(--accent);
+  color: var(--accent-text);
+  border: 1px solid var(--accent);
   border-radius: 50%;
   font: inherit;
   font-size: 1.4rem;
@@ -706,7 +672,7 @@ h1 {
   gap: 4px 24px;
   padding-top: 28px;
   padding-bottom: 40px;
-  border-top: 1px solid var(--line);
+  border-top: 1.5px solid var(--text);
   color: var(--muted);
   font-size: 0.85rem;
 }
@@ -721,13 +687,99 @@ h1 {
     padding: 56px 0;
   }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
-    margin-top: -0.35em;
+  .hero {
+    padding: 56px 0 24px;
   }
 
-  .hero-photo {
-    order: -1;
+  /* Header: brand and menu button, with the links in a drop-down */
+  .site-header {
+    padding: 12px var(--gutter);
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .site-header nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 4px 0 8px;
+  }
+
+  .site-header.is-open nav {
+    display: flex;
+  }
+
+  .site-header nav a {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    font-size: 0.8rem;
+  }
+
+  .site-header nav .nav-cta {
+    margin-top: 8px;
+    padding: 14px 22px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .hero-lead {
+    max-width: none;
+  }
+
+  .button {
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+  }
+
+  .stats {
+    gap: 28px 20px;
+    padding: 44px 0;
+  }
+
+  .stats strong {
+    font-size: 2rem;
+  }
+
+  .entries {
+    gap: 36px;
+  }
+
+  .page-intro {
+    padding: 48px 0 40px;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .split h2 {
+    padding-top: 0;
+  }
+
+  .split .about-grid {
+    margin-top: 36px;
+  }
+
+  .floating-actions {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  /* Keep the footer text clear of the floating buttons */
+  .site-footer {
+    padding-bottom: 96px;
   }
 
   .stats {
@@ -750,14 +802,27 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  /* One card at a time, with the next one peeking in */
   .carousel-track {
-    grid-auto-columns: calc((100% - 12px) / 2);
+    grid-auto-columns: 78%;
     gap: 12px;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+/* Touch screens: hover styles would stick after a tap */
+@media (hover: none) {
+  .gallery-item:hover {
+    transform: none;
+  }
+
+  .gallery-item:hover img {
+    opacity: 1;
+    box-shadow: none;
   }
 }
 
@@ -770,11 +835,7 @@ h1 {
     animation: none;
   }
 
-  .drawing .draw,
-  .drawing .fill,
-  .drawing .cursor {
-    animation: none;
-    stroke-dashoffset: 0;
-    opacity: 1;
+  .gallery-item {
+    transition: none;
   }
 }
