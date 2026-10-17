@@ -854,7 +854,7 @@ h2 {
   display: none;
 }
 
-.gallery-card {
+.carousel-track > .window {
   scroll-snap-align: start;
 }
 

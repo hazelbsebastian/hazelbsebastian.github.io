@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=36">
+  <link rel="stylesheet" href="style.css?v=37">
   <script>
     // Apply a saved theme before the page paints, so it doesn't flash
     try {
@@ -60,7 +60,8 @@
           <h2 class="collection-title">Systems</h2>
           <p class="collection-note">Capstone, academic, and competition work · 3 systems</p>
         </div>
-        <div class="cards">
+        <div class="carousel">
+          <div class="carousel-track">
 
           <article class="window">
             <div class="window-bar">solarcore.html</div>
@@ -104,6 +105,11 @@
             </div>
           </article>
 
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-button" type="button" data-dir="-1" aria-label="Previous systems">&#8249;</button>
+            <button class="carousel-button" type="button" data-dir="1" aria-label="Next systems">&#8250;</button>
+          </div>
         </div>
       </section>
 
