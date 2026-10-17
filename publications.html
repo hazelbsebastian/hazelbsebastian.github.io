@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Publication materials and social media graphics designed by Hazel B. Sebastian.">
-  <title>Publication Materials — Hazel B. Sebastian</title>
+  <meta name="description" content="Projects, publication materials, and graphic designs by Hazel B. Sebastian.">
+  <title>Projects &amp; Designs — Hazel B. Sebastian</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=28">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css?v=36">
   <script>
     // Apply a saved theme before the page paints, so it doesn't flash
     try {
@@ -22,78 +22,174 @@
 <body>
 
   <header class="site-header">
-    <a class="brand" href="index.html">Hazel B.<br>Sebastian</a>
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-      <svg class="icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <nav id="site-nav">
-      <a class="is-active" href="index.html#work" aria-current="true">Work</a>
-      <a href="index.html#recognition">Recognition</a>
-      <a href="index.html#leadership">Leadership</a>
-      <a href="index.html#about">About</a>
-      <a class="nav-cta" href="index.html#contact">Contact me</a>
-    </nav>
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">HS</span>Hazel B. Sebastian</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav id="site-nav">
+        <a class="is-active" href="index.html#projects" aria-current="true">Projects</a>
+        <a href="index.html#certifications">Certifications</a>
+        <a href="index.html#recognition">Recognition</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#about">About</a>
+        <a class="nav-cta" href="index.html#contact">Contact me</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
 
-    <section class="page-intro">
-      <a class="back-link text-link" href="index.html#work">← Back to work</a>
-      <p class="eyebrow">2023 – Present · Graphic Design</p>
-      <h1 class="page-title">Publication Materials &amp; Social Media Graphics</h1>
+    <section class="wrap page-intro">
+      <a class="back-link text-link" href="index.html#projects">← Back to projects</a>
+      <p class="eyebrow">2023 – Present · UI &amp; Graphic Design</p>
+      <h1 class="page-title">Projects &amp; Designs</h1>
       <p class="lead">
-        Posters and social media graphics I designed in Canva for the College of IT Local Council
-        and the Sangguniang Kabataan, along with a logo, presentations, and posters from my coursework.
-        Select a design to view it in Canva.
+        Systems I've helped design and build: a GIS-based solar installation tracker, a game based on a
+        Filipino street game, and an attendance, evaluation, and e-certificate system for a skills
+        demonstration booth. After them come the posters, social media graphics, logo, and presentations
+        I made in Canva for the College of IT Local Council, the Sangguniang Kabataan, and my coursework.
       </p>
     </section>
 
-    <section>
+    <div class="desk">
+
+      <section class="wrap">
+        <div class="project-head">
+          <h2 class="collection-title">Systems</h2>
+          <p class="collection-note">Capstone, academic, and competition work · 3 systems</p>
+        </div>
+        <div class="cards">
+
+          <article class="window">
+            <div class="window-bar">solarcore.html</div>
+            <img class="window-media" src="images/publications/Presentation03.png" alt="SolarCORE presentation cover" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Capstone Project</p>
+              <h3>SolarCORE</h3>
+              <p class="role">GIS-Based Solar Installation Tracking System · UI Designer</p>
+              <p>Designed the overall look of the SolarCORE website and created its logo.</p>
+              <div class="card-action button-row">
+                <a class="button" href="https://stfcrz11.github.io/SolarCORE_docs/credits.html" target="_blank" rel="noopener">View document</a>
+                <a class="button button--plain" href="https://canva.link/pmqcrvxscxm5jf8" target="_blank" rel="noopener">View presentation</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">sili-tubig-clash.exe</div>
+            <img class="window-media" src="images/publications/Presentation02.png" alt="Sili-Tubig Clash presentation cover" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Game Dev Challenge</p>
+              <h3>Sili-Tubig Clash</h3>
+              <p class="role">4v1 Asymmetric Chase Game · Developer Support</p>
+              <p>Helped a team of five build a digital take on a Filipino street game, which placed 2nd Runner Up at DOST Region 2's CODE &amp; CONQUER.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/0mgmvub9hy87hjp" target="_blank" rel="noopener">View presentation</a></p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">booth-evaluation.html</div>
+            <img class="window-media" src="images/projects/booth-evaluation.png" alt="Booth Evaluation System home screen, asking who's checking in" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Skills Demonstration</p>
+              <h3>Booth Evaluation System</h3>
+              <p class="role">Attendance, Evaluation &amp; E-Certificate System · Designer &amp; Developer</p>
+              <p>Took a skills demonstration booth off paper with passkey check-in, before-and-after evaluations, and an automatic PDF certificate, running free on GitHub Pages and Google Sheets.</p>
+              <div class="card-action button-row">
+                <a class="button" href="https://hazelbsebastian.github.io/booth-evaluation/project.html" target="_blank" rel="noopener">View document</a>
+                <a class="button button--plain" href="https://hazelbsebastian.github.io/booth-evaluation/" target="_blank" rel="noopener">View live site</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+    <section class="wrap">
       <div class="collection">
         <div class="collection-head">
           <h2 class="collection-title">Sangguniang Kabataan</h2>
           <p class="collection-note">Barangay Bantug, Ramon, Isabela · 6 designs</p>
         </div>
 
+        <!-- SAMPLE descriptions on the design cards below: replace them with your own. -->
         <div class="carousel">
           <div class="carousel-track">
 
-          <a class="gallery-item" href="https://canva.link/pfxha88m9efg4ml" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat01.png" alt="Edu-Aksyon design preview" loading="lazy" width="1024" height="1024">
-            <h3>Edu-Aksyon</h3>
-            <p class="gallery-desc">School kit distribution</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">edu-aksyon.png</div>
+            <img class="window-media" src="images/publications/SKPubmat01.png" alt="Edu-Aksyon design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Edu-Aksyon</h3>
+              <p class="role">School kit distribution</p>
+              <p>Announced the SK's school kit distribution, with a bulletin-board layout that keeps the date and venue easy to spot.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/pfxha88m9efg4ml" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/dnkeacbmpbkzqze" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat02.png" alt="Balik Eskwela design preview" loading="lazy" width="1024" height="1024">
-            <h3>Balik Eskwela</h3>
-            <p class="gallery-desc">School supplies distribution</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">balik-eskwela.png</div>
+            <img class="window-media" src="images/publications/SKPubmat02.png" alt="Balik Eskwela design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Balik Eskwela</h3>
+              <p class="role">School supplies distribution</p>
+              <p>Promoted the back-to-school supplies drive for Barangay Bantug's students, from kinder to college.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/dnkeacbmpbkzqze" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/23zzzdwzeq9h2oj" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat03.png" alt="Liga Game design preview" loading="lazy" width="1024" height="1024">
-            <h3>Liga Game</h3>
-            <p class="gallery-desc">Semifinals game day</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">liga-game.png</div>
+            <img class="window-media" src="images/publications/SKPubmat03.png" alt="Liga Game design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Liga Game</h3>
+              <p class="role">Semifinals game day</p>
+              <p>Built up excitement for the league semifinals with bold, sporty type and the matchup front and center.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/23zzzdwzeq9h2oj" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/jsc5cn7k5gvnsrp" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat04.png" alt="Awarding Day design preview" loading="lazy" width="1024" height="1024">
-            <h3>Awarding Day</h3>
-            <p class="gallery-desc">Awarding ceremony</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">awarding-day.png</div>
+            <img class="window-media" src="images/publications/SKPubmat04.png" alt="Awarding Day design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Awarding Day</h3>
+              <p class="role">Awarding ceremony</p>
+              <p>Invited the community to the league's awarding ceremony, with the program details kept clear and simple.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/jsc5cn7k5gvnsrp" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/7x5o1oak0qtt1t7" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat05.png" alt="Beauty Pageant design preview" loading="lazy" width="1024" height="1024">
-            <h3>Beauty Pageant</h3>
-            <p class="gallery-desc">Search for Miss Bantugueña 2026</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">beauty-pageant.png</div>
+            <img class="window-media" src="images/publications/SKPubmat05.png" alt="Beauty Pageant design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Beauty Pageant</h3>
+              <p class="role">Search for Miss Bantugueña 2026</p>
+              <p>Promoted the Search for Miss Bantugueña 2026 with an elegant layout fit for pageant night.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/7x5o1oak0qtt1t7" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/7aacprm016sm22r" target="_blank" rel="noopener">
-            <img src="images/publications/SKPubmat06.png" alt="Nutrition Month design preview" loading="lazy" width="1024" height="1024">
-            <h3>Nutrition Month</h3>
-            <p class="gallery-desc">52nd Nutrition Month</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">nutrition-month.png</div>
+            <img class="window-media" src="images/publications/SKPubmat06.png" alt="Nutrition Month design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">SK Bantug · Pubmat</p>
+              <h3>Nutrition Month</h3>
+              <p class="role">52nd Nutrition Month</p>
+              <p>Celebrated the 52nd Nutrition Month with a bright, friendly design that encourages healthy eating.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/7aacprm016sm22r" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
           </div>
           <div class="carousel-controls">
@@ -104,7 +200,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="wrap">
       <div class="collection">
         <div class="collection-head">
           <h2 class="collection-title">CIT Local Council</h2>
@@ -114,53 +210,101 @@
         <div class="carousel">
           <div class="carousel-track">
 
-          <a class="gallery-item" href="https://canva.link/ld384vbjp2m42lj" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat07.png" alt="GC Announcement design preview" loading="lazy" width="1024" height="1024">
-            <h3>GC Announcement</h3>
-            <p class="gallery-desc">Group chat invitation</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">gc-announcement.png</div>
+            <img class="window-media" src="images/publications/CITPubmat07.png" alt="GC Announcement design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Pubmat</p>
+              <h3>GC Announcement</h3>
+              <p class="role">Group chat invitation</p>
+              <p>Invited CIT students to join the official group chat, with a mock-up of the chat screen so the steps are easy to follow.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/ld384vbjp2m42lj" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/6dgnyzpdn9q8kyl" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat08.png" alt="Ctrl + P design preview" loading="lazy" width="1024" height="1024">
-            <h3>Ctrl + P</h3>
-            <p class="gallery-desc">Free printing for CIT students</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">ctrl-plus-p.png</div>
+            <img class="window-media" src="images/publications/CITPubmat08.png" alt="Ctrl + P design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Pubmat</p>
+              <h3>Ctrl + P</h3>
+              <p class="role">Free printing for CIT students</p>
+              <p>Announced the council's free printing service for CIT students in a pixel-art style that suits the college.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/6dgnyzpdn9q8kyl" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/ldqwarx29me5157" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat09.png" alt="Sound IT design preview" loading="lazy" width="1024" height="1024">
-            <h3>Sound IT</h3>
-            <p class="gallery-desc">Free speaker use for CIT students</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">sound-it.png</div>
+            <img class="window-media" src="images/publications/CITPubmat09.png" alt="Sound IT design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Pubmat</p>
+              <h3>Sound IT</h3>
+              <p class="role">Free speaker use for CIT students</p>
+              <p>Promoted free speaker use for CIT students, matching the pixel-art look of the council's other services.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/ldqwarx29me5157" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/n0858x81k1dlkve" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat10.png" alt="Keychain design preview" loading="lazy" width="1024" height="1024">
-            <h3>Keychain</h3>
-            <p class="gallery-desc">Keychain merchandise</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">keychain.png</div>
+            <img class="window-media" src="images/publications/CITPubmat10.png" alt="Keychain design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Merch</p>
+              <h3>Keychain</h3>
+              <p class="role">Keychain merchandise</p>
+              <p>Showcased the council's keychain merchandise so students could see each design before ordering.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/n0858x81k1dlkve" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/mpvxq1s87k43zwl" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat11.png" alt="Handypacks design preview" loading="lazy" width="1024" height="1024">
-            <h3>Handypacks</h3>
-            <p class="gallery-desc">Tote bag and pouch merchandise</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">handypacks.png</div>
+            <img class="window-media" src="images/publications/CITPubmat11.png" alt="Handypacks design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Merch</p>
+              <h3>Handypacks</h3>
+              <p class="role">Tote bag and pouch merchandise</p>
+              <p>Presented the tote bag and pouch merchandise together in one clean product layout.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/mpvxq1s87k43zwl" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/naqy92yowxyxzey" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat12.png" alt="Button Pin design preview" loading="lazy" width="1024" height="1024">
-            <h3>Button Pin</h3>
-            <p class="gallery-desc">TechTags button pin merchandise</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">button-pin.png</div>
+            <img class="window-media" src="images/publications/CITPubmat12.png" alt="Button Pin design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Merch</p>
+              <h3>Button Pin</h3>
+              <p class="role">TechTags button pin merchandise</p>
+              <p>Introduced the TechTags button pins, giving each pin design its own spot on the page.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/naqy92yowxyxzey" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/b1xjeygl5bhidof" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat13.png" alt="Department Shirt design preview" loading="lazy" width="1024" height="1024">
-            <h3>Department Shirt</h3>
-            <p class="gallery-desc">Department shirt</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">department-shirt.png</div>
+            <img class="window-media" src="images/publications/CITPubmat13.png" alt="Department Shirt design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Merch</p>
+              <h3>Department Shirt</h3>
+              <p class="role">Department shirt</p>
+              <p>Revealed the CIT department shirt design to students ahead of orders.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/b1xjeygl5bhidof" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item" href="https://canva.link/mxtz33ac1pm71zc" target="_blank" rel="noopener">
-            <img src="images/publications/CITPubmat14.png" alt="Cyber Alpha and Cyber Luna design preview" loading="lazy" width="1024" height="1024">
-            <h3>Cyber Alpha and Cyber Luna</h3>
-            <p class="gallery-desc">Sticker designs</p>
-          </a>
+          <article class="window gallery-card">
+            <div class="window-bar">cyber-alpha-and-cyber-luna.png</div>
+            <img class="window-media" src="images/publications/CITPubmat14.png" alt="Cyber Alpha and Cyber Luna design preview" loading="lazy" width="1024" height="1024">
+            <div class="window-body">
+              <p class="card-meta">CIT Local Council · Merch</p>
+              <h3>Cyber Alpha and Cyber Luna</h3>
+              <p class="role">Sticker designs</p>
+              <p>Designed a pair of mascot stickers that give the College of IT a friendly face.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/mxtz33ac1pm71zc" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
           </div>
           <div class="carousel-controls">
@@ -171,7 +315,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="wrap">
       <div class="collection">
         <div class="collection-head">
           <h2 class="collection-title">Logos</h2>
@@ -181,11 +325,17 @@
         <div class="carousel">
           <div class="carousel-track">
 
-          <a class="gallery-item gallery-item--logo" href="https://canva.link/w5frf21kfpfmd36" target="_blank" rel="noopener">
-            <img src="images/publications/Logo01.png" alt="SolarCORE logo preview" loading="lazy" width="800" height="800">
-            <h3>SolarCORE</h3>
-            <p class="gallery-desc">Logo for a solar installation tracking system</p>
-          </a>
+          <article class="window gallery-card gallery-card--logo">
+            <div class="window-bar">solarcore.png</div>
+            <img class="window-media" src="images/publications/Logo01.png" alt="SolarCORE logo preview" loading="lazy" width="800" height="800">
+            <div class="window-body">
+              <p class="card-meta">Logo · Capstone</p>
+              <h3>SolarCORE</h3>
+              <p class="role">Logo for a solar installation tracking system</p>
+              <p>A sun-inspired mark for the capstone system, used across its website and defense presentation.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/w5frf21kfpfmd36" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
           </div>
           <div class="carousel-controls">
@@ -196,7 +346,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="wrap">
       <div class="collection">
         <div class="collection-head">
           <h2 class="collection-title">Presentations</h2>
@@ -206,23 +356,41 @@
         <div class="carousel">
           <div class="carousel-track">
 
-          <a class="gallery-item gallery-item--wide" href="https://canva.link/a4bm0s38pkge1pt" target="_blank" rel="noopener">
-            <img src="images/publications/Presentation01.png" alt="Technical Manual presentation preview" loading="lazy" width="1024" height="630">
-            <h3>Technical Manual</h3>
-            <p class="gallery-desc">Huion Inspiroy creative pen tablet</p>
-          </a>
+          <article class="window gallery-card gallery-card--wide">
+            <div class="window-bar">technical-manual.png</div>
+            <img class="window-media" src="images/publications/Presentation01.png" alt="Technical Manual presentation preview" loading="lazy" width="1024" height="630">
+            <div class="window-body">
+              <p class="card-meta">Presentation · Coursework</p>
+              <h3>Technical Manual</h3>
+              <p class="role">Huion Inspiroy creative pen tablet</p>
+              <p>Walked through setting up and using the Huion Inspiroy pen tablet in a step-by-step deck.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/a4bm0s38pkge1pt" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item gallery-item--wide" href="https://canva.link/0mgmvub9hy87hjp" target="_blank" rel="noopener">
-            <img src="images/publications/Presentation02.png" alt="SiliTubig: Clash presentation preview" loading="lazy" width="1024" height="576">
-            <h3>SiliTubig: Clash</h3>
-            <p class="gallery-desc">4v1 asymmetric chase game</p>
-          </a>
+          <article class="window gallery-card gallery-card--wide">
+            <div class="window-bar">silitubig-clash.png</div>
+            <img class="window-media" src="images/publications/Presentation02.png" alt="SiliTubig: Clash presentation preview" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">Presentation · Competition</p>
+              <h3>SiliTubig: Clash</h3>
+              <p class="role">4v1 asymmetric chase game</p>
+              <p>Pitched the game's concept, mechanics, and characters for the DOST Region 2 game dev challenge.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/0mgmvub9hy87hjp" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item gallery-item--wide" href="https://canva.link/pmqcrvxscxm5jf8" target="_blank" rel="noopener">
-            <img src="images/publications/Presentation03.png" alt="SolarCore presentation preview" loading="lazy" width="1024" height="576">
-            <h3>SolarCore</h3>
-            <p class="gallery-desc">GIS-based solar installation tracking system</p>
-          </a>
+          <article class="window gallery-card gallery-card--wide">
+            <div class="window-bar">solarcore.png</div>
+            <img class="window-media" src="images/publications/Presentation03.png" alt="SolarCore presentation preview" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">Presentation · Capstone</p>
+              <h3>SolarCore</h3>
+              <p class="role">GIS-based solar installation tracking system</p>
+              <p>Presented the capstone system at its defense, from the problem to the GIS-based solution.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/pmqcrvxscxm5jf8" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
           </div>
           <div class="carousel-controls">
@@ -233,7 +401,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="wrap">
       <div class="collection">
         <div class="collection-head">
           <h2 class="collection-title">Posters</h2>
@@ -243,17 +411,29 @@
         <div class="carousel">
           <div class="carousel-track">
 
-          <a class="gallery-item gallery-item--tall" href="https://canva.link/vz6x5f5tm5rjctr" target="_blank" rel="noopener">
-            <img src="images/publications/Poster01.png" alt="Do Not Bring Death to Anyone poster preview" loading="lazy" width="1024" height="1453">
-            <h3>Do Not Bring Death to Anyone</h3>
-            <p class="gallery-desc">Digital poster</p>
-          </a>
+          <article class="window gallery-card gallery-card--tall">
+            <div class="window-bar">do-not-bring-death-to-anyone.png</div>
+            <img class="window-media" src="images/publications/Poster01.png" alt="Do Not Bring Death to Anyone poster preview" loading="lazy" width="1024" height="1453">
+            <div class="window-body">
+              <p class="card-meta">Poster · Coursework</p>
+              <h3>Do Not Bring Death to Anyone</h3>
+              <p class="role">Digital poster</p>
+              <p>A digital poster made for class, using strong contrast to carry its message.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/vz6x5f5tm5rjctr" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
-          <a class="gallery-item gallery-item--tall" href="https://canva.link/zzrhld5eufi393l" target="_blank" rel="noopener">
-            <img src="images/publications/Poster02.png" alt="Social Justice poster preview" loading="lazy" width="434" height="623">
-            <h3>Social Justice</h3>
-            <p class="gallery-desc">Digital poster</p>
-          </a>
+          <article class="window gallery-card gallery-card--tall">
+            <div class="window-bar">social-justice.png</div>
+            <img class="window-media" src="images/publications/Poster02.png" alt="Social Justice poster preview" loading="lazy" width="434" height="623">
+            <div class="window-body">
+              <p class="card-meta">Poster · Coursework</p>
+              <h3>Social Justice</h3>
+              <p class="role">Digital poster</p>
+              <p>A digital poster on social justice made for class, built around one central image.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/zzrhld5eufi393l" target="_blank" rel="noopener">View in Canva</a></p>
+            </div>
+          </article>
 
           </div>
           <div class="carousel-controls">
@@ -264,11 +444,15 @@
       </div>
     </section>
 
+    </div>
+
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Hazel B. Sebastian</p>
-    <p>Ramon, Isabela, Philippines</p>
+    <div class="wrap">
+      <p>© 2026 Hazel B. Sebastian</p>
+      <p>Ramon, Isabela, Philippines</p>
+    </div>
   </footer>
 
   <div class="floating-actions">

@@ -7,8 +7,8 @@
   <title>Hazel B. Sebastian — UI Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=28">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css?v=36">
   <script>
     // Apply a saved theme before the page paints, so it doesn't flash
     try {
@@ -22,210 +22,378 @@
 <body>
 
   <header class="site-header">
-    <a class="brand" href="#top">Hazel B.<br>Sebastian</a>
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-      <svg class="icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <nav id="site-nav">
-      <a href="#work">Work</a>
-      <a href="#recognition">Recognition</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="#contact">Contact me</a>
-    </nav>
+    <div class="site-header-inner">
+      <a class="brand" href="#top"><span class="brand-mark">HS</span>Hazel B. Sebastian</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav id="site-nav">
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact me</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
 
-    <section class="hero">
-      <h1>Hi, my name is<br>Hazel B. Sebastian</h1>
-      <p class="hero-roles">UI Designer / Graphic Designer</p>
-      <p class="hero-lead">
-        I'm a BS Information Technology student at the University of La Salette.
-        I design websites, logos, and publication materials for the communities I work with.
-      </p>
-      <a class="button" href="#work">See my work</a>
-    </section>
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Hello.<br>I'm <span class="accent">Hazel.</span></h1>
+          <p class="hero-roles">UI Designer / Graphic Designer</p>
+          <p class="hero-lead">
+            I'm a BS Information Technology student at the University of La Salette.
+            I design websites, logos, and publication materials for the communities I work with.
+          </p>
+          <div class="button-row">
+            <a class="button" href="#projects">See my projects</a>
+            <a class="button button--plain" href="Resume_Hazel_Sebastian.docx" download>Download résumé</a>
+          </div>
+        </div>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>UI Design</span><span>Graphic Design</span><span>Web Design</span><span>Logo Design</span><span>UI Design</span><span>Graphic Design</span><span>Web Design</span><span>Logo Design</span>
-        <span>UI Design</span><span>Graphic Design</span><span>Web Design</span><span>Logo Design</span><span>UI Design</span><span>Graphic Design</span><span>Web Design</span><span>Logo Design</span>
+        <svg class="hero-art" viewBox="0 0 360 290" aria-hidden="true">
+          <circle class="paper" cx="118" cy="22" r="7"/>
+          <circle class="paper" cx="150" cy="12" r="5"/>
+          <circle class="paper" cx="312" cy="30" r="6"/>
+          <path class="none" d="M286 14v14M279 21h14"/>
+          <!-- Pencil -->
+          <g transform="rotate(-12 62 160)">
+            <path class="paper" d="M44 92 L62 54 L80 92 Z"/>
+            <path class="ink" d="M55 69 L62 54 L69 69 Z"/>
+            <rect class="accent" x="44" y="92" width="36" height="128" rx="3"/>
+            <path class="none" d="M62 100v112"/>
+            <rect class="ink" x="44" y="220" width="36" height="22" rx="5"/>
+          </g>
+          <!-- Computer -->
+          <rect class="ink" x="114" y="56" width="190" height="166" rx="22"/>
+          <rect class="paper" x="102" y="44" width="190" height="166" rx="22"/>
+          <rect class="accent" x="124" y="66" width="146" height="108" rx="12"/>
+          <circle class="paper" cx="197" cy="104" r="22"/>
+          <circle class="ink" cx="201" cy="102" r="9"/>
+          <circle class="paper bare" cx="205" cy="98" r="3"/>
+          <path class="paper" d="M162 138 Q197 168 232 138 Z"/>
+          <circle class="paper" cx="128" cy="192" r="6"/>
+          <rect class="ink" x="236" y="189" width="34" height="6" rx="3"/>
+          <rect class="paper" x="172" y="210" width="50" height="20"/>
+          <rect class="paper" x="112" y="230" width="196" height="28" rx="6"/>
+          <path class="none" d="M132 244h18M160 244h18M188 244h18M216 244h18M244 244h44"/>
+          <!-- Mouse -->
+          <path class="none" d="M332 232 C334 200 320 180 304 170"/>
+          <rect class="paper" x="320" y="230" width="24" height="30" rx="12"/>
+          <path class="none" d="M332 230v10"/>
+          <path class="none" d="M20 266H344"/>
+        </svg>
+      </div>
+
+      <div class="wrap quick">
+        <h2 class="quick-title">Quick links</h2>
+        <ul class="quick-links">
+          <li><a href="#projects">Projects <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="#certifications">Certifications <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="#about">About <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="#contact">Contact <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        </ul>
       </div>
     </div>
 
-    <section class="stats" aria-label="At a glance">
-      <div><strong>3+ years</strong><span>of design work</span></div>
-      <div><strong>20</strong><span>graphic designs</span></div>
-      <div><strong>2</strong><span>recognitions</span></div>
-      <div><strong>4</strong><span>leadership roles</span></div>
-    </section>
+    <div class="desk">
 
-    <section id="work">
-      <h2>Work</h2>
-      <div class="entries">
-
-        <article class="entry">
-          <p class="meta">2026 · Capstone Project</p>
-          <div>
-            <h3>SolarCORE</h3>
-            <p class="role">GIS-Based Solar Installation Tracking System · UI Designer</p>
-            <p>Designed the overall look of the SolarCORE website and created its logo.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">2026 · Academic Project</p>
-          <div>
-            <h3>BHCIMS</h3>
-            <p class="role">Barangay Health Center Information Management System · UI Designer</p>
-            <p>Co-developed a health records system for a barangay health center and co-authored its user manual.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">2023 – Present · Graphic Design</p>
-          <div>
-            <h3>Publication Materials &amp; Social Media Graphics</h3>
-            <p class="role">College of IT Local Council and Sangguniang Kabataan · Designer</p>
-            <p>Designed posters and social media graphics in Canva for the College of IT Local Council and SK.</p>
-            <p class="entry-action"><a class="button" href="publications.html">View the publication materials</a></p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="recognition">
-      <h2>Recognition</h2>
-      <div class="entries">
-
-        <article class="entry">
-          <p class="meta">September 2026</p>
-          <div>
-            <h3>2nd Runner Up, Team Category</h3>
-            <p class="role">CODE &amp; CONQUER Cagayan Valley: E-Sports Game Dev Challenge · DOST Region 2</p>
-            <p>Supported a team of five as Developer Support in building Sili-Tubig Clash, a digital take on a Filipino street game.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">July 2026</p>
-          <div>
-            <h3>Special Citation for Volunteerism</h3>
-            <p class="role">Gawad Saletino · University of La Salette</p>
-            <p>Recognized for volunteer and community engagement service during A.Y. 2025 – 2026.</p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="leadership">
-      <h2>Leadership</h2>
-      <div class="entries">
-
-        <article class="entry">
-          <p class="meta">A.Y. 2025 – 2026</p>
-          <div>
-            <h3>Governor</h3>
-            <p class="role">Local Council, College of Information Technology · University of La Salette</p>
-            <p>Led the council in planning and running college activities and events, and to the Gawad Saletino Outstanding Local Council award in July 2026.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">A.Y. 2024 – 2025</p>
-          <div>
-            <h3>File Secretary</h3>
-            <p class="role">Local Council, College of Information Technology · University of La Salette</p>
-            <p>Kept the council's official files, records, and correspondence organized and up to date.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">A.Y. 2023 – 2024</p>
-          <div>
-            <h3>Performing Arts Coordinator</h3>
-            <p class="role">Local Council, College of Information Technology · University of La Salette</p>
-            <p>Organized and coordinated performing arts presentations for college events.</p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="meta">2024 – Present</p>
-          <div>
-            <h3>Committee on Social Inclusion and Equity</h3>
-            <p class="role">Sangguniang Kabataan, Barangay Bantug · Ramon, Isabela</p>
-            <p>Helped plan youth programs that include marginalized and vulnerable young people.</p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="about" class="split">
-      <h2>About</h2>
-      <div>
-        <p class="statement">
-          Hi, I'm Hazel, a designer and student leader from Ramon, Isabela. I like making things
-          that are clear and friendly, from websites and logos to the posters my communities see every day.
-        </p>
-        <div class="about-grid">
-          <div>
-            <h3>Education</h3>
-            <ul class="plain">
-              <li>
-                <strong>BS Information Technology</strong>
-                <span>University of La Salette, Santiago City · 2023 – Present</span>
-              </li>
-              <li>
-                <strong>General Academic Strand</strong>
-                <span>San Sebastian Integrated School · 2021 – 2023</span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Skills</h3>
-            <ul class="plain">
-              <li>
-                <strong>Technical</strong>
-                <span>HTML, CSS, JavaScript, Git and GitHub, Visual Studio Code</span>
-              </li>
-              <li>
-                <strong>Software</strong>
-                <span>Canva, Microsoft Word, Excel, PowerPoint</span>
-              </li>
-              <li>
-                <strong>Languages</strong>
-                <span>Filipino, English, Ilocano</span>
-              </li>
-              <li>
-                <strong>Interests</strong>
-                <span>UI/UX Design, Graphic Design, Web Design, Community Service</span>
-              </li>
-            </ul>
-          </div>
+      <div class="wrap">
+        <div class="stats" aria-label="At a glance">
+          <div><strong>3+ years</strong><span>of design work</span></div>
+          <div><strong>20</strong><span>graphic designs</span></div>
+          <div><strong>2</strong><span>recognitions</span></div>
+          <div><strong>4</strong><span>leadership roles</span></div>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p class="contact-line">Have a project or an opportunity in mind? I'd be glad to hear from you.</p>
-      <a class="contact-email" href="mailto:sebastianhazel369@gmail.com">sebastianhazel369@gmail.com</a>
-      <p class="contact-links">
-        <a class="button" href="Resume_Hazel_Sebastian.docx" download>Download résumé</a>
-      </p>
-    </section>
+      <section id="projects" class="wrap">
+        <h2>Projects</h2>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more →</p>
+        <div class="cards cards--swipe">
+
+          <article class="window">
+            <div class="window-bar">solarcore.html</div>
+            <img class="window-media" src="images/publications/Presentation03.png" alt="SolarCORE presentation cover" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Capstone Project</p>
+              <h3>SolarCORE</h3>
+              <p class="role">GIS-Based Solar Installation Tracking System · UI Designer</p>
+              <p>Designed the overall look of the SolarCORE website and created its logo.</p>
+              <div class="card-action button-row">
+                <a class="button" href="https://stfcrz11.github.io/SolarCORE_docs/credits.html" target="_blank" rel="noopener">View document</a>
+                <a class="button button--plain" href="https://canva.link/pmqcrvxscxm5jf8" target="_blank" rel="noopener">View presentation</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">sili-tubig-clash.exe</div>
+            <img class="window-media" src="images/publications/Presentation02.png" alt="Sili-Tubig Clash presentation cover" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Game Dev Challenge</p>
+              <h3>Sili-Tubig Clash</h3>
+              <p class="role">4v1 Asymmetric Chase Game · Developer Support</p>
+              <p>Helped a team of five build a digital take on a Filipino street game, which placed 2nd Runner Up at DOST Region 2's CODE &amp; CONQUER.</p>
+              <p class="card-action"><a class="button button--plain" href="https://canva.link/0mgmvub9hy87hjp" target="_blank" rel="noopener">View presentation</a></p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">booth-evaluation.html</div>
+            <img class="window-media" src="images/projects/booth-evaluation.png" alt="Booth Evaluation System home screen, asking who's checking in" loading="lazy" width="1024" height="576">
+            <div class="window-body">
+              <p class="card-meta">2026 · Skills Demonstration</p>
+              <h3>Booth Evaluation System</h3>
+              <p class="role">Attendance, Evaluation &amp; E-Certificate System · Designer &amp; Developer</p>
+              <p>Took a skills demonstration booth off paper with passkey check-in, before-and-after evaluations, and an automatic PDF certificate, running free on GitHub Pages and Google Sheets.</p>
+              <div class="card-action button-row">
+                <a class="button" href="https://hazelbsebastian.github.io/booth-evaluation/project.html" target="_blank" rel="noopener">View document</a>
+                <a class="button button--plain" href="https://hazelbsebastian.github.io/booth-evaluation/" target="_blank" rel="noopener">View live site</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="more">
+          <a class="button" href="publications.html">View more projects
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </p>
+      </section>
+
+      <section id="certifications" class="wrap">
+        <h2>Certifications</h2>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more →</p>
+        <div class="cards cards--swipe">
+
+          <article class="window">
+            <div class="window-bar">javascript-essentials-2.pdf</div>
+            <div class="window-body">
+              <div class="cert-seal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+              </div>
+              <p class="card-meta">October 2026</p>
+              <h3>JavaScript Essentials 2</h3>
+              <p class="role">Cisco Networking Academy · JS Institute</p>
+              <p class="card-action"><a class="button button--plain" href="certificates/javascript-essentials-2.pdf" target="_blank" rel="noopener">View certificate</a></p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">javascript-essentials-1.pdf</div>
+            <div class="window-body">
+              <div class="cert-seal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+              </div>
+              <p class="card-meta">October 2026</p>
+              <h3>JavaScript Essentials 1</h3>
+              <p class="role">Cisco Networking Academy · JS Institute</p>
+              <p class="card-action"><a class="button button--plain" href="certificates/javascript-essentials-1.pdf" target="_blank" rel="noopener">View certificate</a></p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">css-essentials.pdf</div>
+            <div class="window-body">
+              <div class="cert-seal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+              </div>
+              <p class="card-meta">October 2026</p>
+              <h3>CSS Essentials</h3>
+              <p class="role">Cisco Networking Academy · JS Institute</p>
+              <p class="card-action"><a class="button button--plain" href="certificates/css-essentials.pdf" target="_blank" rel="noopener">View certificate</a></p>
+            </div>
+          </article>
+
+        </div>
+        <p class="more">
+          <a class="button" href="certifications.html">View all certifications
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </p>
+      </section>
+
+      <section id="recognition" class="wrap">
+        <h2>Recognition</h2>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more →</p>
+        <div class="cards cards--two cards--swipe">
+
+          <article class="window">
+            <div class="window-bar">award-2026-09.txt</div>
+            <div class="window-body">
+              <span class="badge">September 2026</span>
+              <h3>2nd Runner Up, Team Category</h3>
+              <p class="role">CODE &amp; CONQUER Cagayan Valley: E-Sports Game Dev Challenge · DOST Region 2</p>
+              <p>Supported a team of five as Developer Support in building Sili-Tubig Clash, a digital take on a Filipino street game.</p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">award-2026-07.txt</div>
+            <div class="window-body">
+              <span class="badge">July 2026</span>
+              <h3>Special Citation for Volunteerism</h3>
+              <p class="role">Gawad Saletino · University of La Salette</p>
+              <p>Recognized for volunteer and community engagement service during A.Y. 2025 – 2026.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="leadership" class="wrap">
+        <h2>Leadership</h2>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more →</p>
+        <div class="cards cards--two cards--swipe">
+
+          <article class="window">
+            <div class="window-bar">governor.txt</div>
+            <div class="window-body">
+              <span class="badge">A.Y. 2025 – 2026</span>
+              <h3>Governor</h3>
+              <p class="role">CIT Local Council · University of La Salette</p>
+              <p>Led the council in planning and running college activities and events, and to the Gawad Saletino Outstanding Local Council award in July 2026.</p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">sk-committee.txt</div>
+            <div class="window-body">
+              <span class="badge">2024 – Present</span>
+              <h3>Committee on Social Inclusion and Equity</h3>
+              <p class="role">Sangguniang Kabataan · Barangay Bantug, Ramon, Isabela</p>
+              <p>Helped plan youth programs that include marginalized and vulnerable young people.</p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">file-secretary.txt</div>
+            <div class="window-body">
+              <span class="badge">A.Y. 2024 – 2025</span>
+              <h3>File Secretary</h3>
+              <p class="role">CIT Local Council · University of La Salette</p>
+              <p>Kept the council's official files, records, and correspondence organized and up to date.</p>
+            </div>
+          </article>
+
+          <article class="window">
+            <div class="window-bar">performing-arts.txt</div>
+            <div class="window-body">
+              <span class="badge">A.Y. 2023 – 2024</span>
+              <h3>Performing Arts Coordinator</h3>
+              <p class="role">CIT Local Council · University of La Salette</p>
+              <p>Organized and coordinated performing arts presentations for college events.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="about" class="wrap">
+        <div class="window">
+          <div class="window-bar">about-hazel.txt</div>
+          <div class="about-sheet">
+
+            <div class="about-top">
+              <div class="about-photo">
+                <div class="photo-back" aria-hidden="true"></div>
+                <div class="window photo-frame">
+                  <div class="window-bar">hazel.png</div>
+                  <img src="images/profile.jpg?v=2" alt="Hazel B. Sebastian" width="600" height="600">
+                </div>
+                <span class="sticker sticker--mark" aria-hidden="true">HS</span>
+                <span class="sticker sticker--star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>
+                </span>
+              </div>
+
+              <div class="about-intro">
+                <h2>About me</h2>
+                <p class="statement">
+                  Hi, I'm Hazel, a designer and student leader from Ramon, Isabela. I like making things
+                  that are clear and friendly, from websites and logos to the posters my communities see every day.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-cols">
+              <div>
+                <h3 class="pill">Education <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></h3>
+                <ul class="year-list">
+                  <li><span>2023 – Present</span><div><strong>BS Information Technology</strong><small>University of La Salette, Santiago City</small></div></li>
+                  <li><span>2021 – 2023</span><div><strong>General Academic Strand</strong><small>San Sebastian Integrated School</small></div></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="pill">Languages <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></h3>
+                <ul class="chips">
+                  <li>Filipino</li>
+                  <li>English</li>
+                  <li>Ilocano</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="pill">Tools <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></h3>
+                <ul class="tools">
+                  <li><b aria-hidden="true">Cv</b>Canva</li>
+                  <li><b aria-hidden="true">VS</b>VS Code</li>
+                  <li><b aria-hidden="true">Git</b>Git &amp; GitHub</li>
+                  <li><b aria-hidden="true">H5</b>HTML</li>
+                  <li><b aria-hidden="true">C3</b>CSS</li>
+                  <li><b aria-hidden="true">JS</b>JavaScript</li>
+                  <li><b aria-hidden="true">W</b>Word</li>
+                  <li><b aria-hidden="true">X</b>Excel</li>
+                  <li><b aria-hidden="true">P</b>PowerPoint</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="pill">Interests <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></h3>
+                <ul class="chips">
+                  <li>UI/UX Design</li>
+                  <li>Graphic Design</li>
+                  <li>Web Design</li>
+                  <li>Community Service</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="wrap">
+        <h2>Contact</h2>
+        <div class="window">
+          <div class="window-bar">contact.html</div>
+          <div class="window-body">
+            <p class="contact-line">Have a project or an opportunity in mind? I'd be glad to hear from you.</p>
+            <a class="contact-email" href="mailto:sebastianhazel369@gmail.com">sebastianhazel369@gmail.com</a>
+            <div class="button-row">
+              <a class="button" href="mailto:sebastianhazel369@gmail.com">Email me</a>
+              <a class="button button--plain" href="Resume_Hazel_Sebastian.docx" download>Download résumé</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Hazel B. Sebastian</p>
-    <p>Ramon, Isabela, Philippines</p>
+    <div class="wrap">
+      <p>© 2026 Hazel B. Sebastian</p>
+      <p>Ramon, Isabela, Philippines</p>
+    </div>
   </footer>
 
   <div class="floating-actions">
