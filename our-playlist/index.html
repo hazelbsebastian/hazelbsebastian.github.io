@@ -84,7 +84,7 @@
   }
 
   /* Hero — mirrors WelcomePage */
-  .hero { text-align: center; padding: 88px 0 72px; }
+  .hero { text-align: center; padding-top: 88px; padding-bottom: 72px; }
   .bars { display: flex; justify-content: center; align-items: flex-end; height: 120px; gap: 4px; margin-bottom: 48px; }
   .bars span { width: 4px; background: var(--fg); animation: eq 1.4s ease-in-out infinite; transform-origin: bottom; }
   @keyframes eq { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(.55); } }
@@ -200,7 +200,7 @@
 
   @media (max-width: 600px) {
     .bar nav a.link { display: none; }
-    .hero { padding: 64px 0 56px; }
+    .hero { padding-top: 64px; padding-bottom: 56px; }
     .pill { min-width: 0; width: 100%; }
     section { padding: 64px 0; }
     .phone { width: 100%; max-width: 300px; }
