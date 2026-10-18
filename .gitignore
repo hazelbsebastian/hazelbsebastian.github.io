@@ -1,3 +1,5 @@
 desktop.ini
 Thumbs.db
 .vscode/
+# App builds are too large for the repo; upload them as GitHub Releases
+*.apk
