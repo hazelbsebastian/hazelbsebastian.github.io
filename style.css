@@ -144,6 +144,38 @@ img {
   line-height: 1;
 }
 
+/* Landing page: the small logo slides in beside the name after the hero logo scrolls away */
+.brand-logo {
+  width: 0;
+  height: 38px;
+  margin-right: -10px;
+  opacity: 0;
+  transform: scale(0.4) rotate(-12deg);
+  transition: width 0.3s ease, margin-right 0.3s ease, opacity 0.2s ease,
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.brand-logo.logo-art * {
+  stroke-width: 12;
+}
+
+.brand-logo.logo-art .smile {
+  stroke-width: 16;
+}
+
+.show-logo .brand-logo {
+  width: 38px;
+  margin-right: 0;
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo {
+    transition: none;
+  }
+}
+
 .site-header nav {
   display: flex;
   flex-wrap: wrap;
@@ -295,25 +327,41 @@ h1 .accent {
   color: var(--muted);
 }
 
-/* Retro computer illustration */
+/* HS logo badge */
 .hero-art {
   width: 100%;
-  max-width: 380px;
+  max-width: 320px;
   justify-self: center;
 }
 
-.hero-art * {
+.logo-art * {
   stroke: var(--text);
   stroke-width: 4;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
 
-.hero-art .ink { fill: var(--text); }
-.hero-art .paper { fill: var(--bg); }
-.hero-art .accent { fill: var(--accent); }
-.hero-art .none { fill: none; }
-.hero-art .bare { stroke: none; }
+.logo-art .ink { fill: var(--text); }
+.logo-art .paper { fill: var(--bg); }
+.logo-art .accent { fill: var(--accent); }
+.logo-art .none { fill: none; }
+.logo-art .bare { stroke: none; }
+.logo-art .spark { fill: #f2c14e; }
+
+.logo-art .mark {
+  fill: var(--accent-text);
+  stroke: none;
+  font-family: var(--display);
+  font-size: 126px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.logo-art .smile {
+  fill: none;
+  stroke: var(--accent-text);
+  stroke-width: 7;
+}
 
 /* Quick links sit across the line between the hero and the desk below */
 .quick {

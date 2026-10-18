@@ -23,7 +23,14 @@
 
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="#top"><span class="brand-mark">HS</span>Hazel B. Sebastian</a>
+      <a class="brand" href="#top">
+        <svg class="logo-art brand-logo" viewBox="36 14 244 264" aria-hidden="true">
+          <rect class="ink" x="54" y="54" width="220" height="220"/>
+          <rect class="accent" x="40" y="40" width="220" height="220"/>
+          <text class="mark" x="150" y="182" text-anchor="middle">HS</text>
+          <path class="smile" d="M83 201 C117 212 172 214 218 196"/>
+          <path class="spark" d="M253 18 C256 35 259 38 276 41 C259 44 256 47 253 64 C250 47 247 44 230 41 C247 38 250 35 253 18 Z"/>
+        </svg>Hazel B. Sebastian</a>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <svg class="icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -56,37 +63,17 @@
           </div>
         </div>
 
-        <svg class="hero-art" viewBox="0 0 360 290" aria-hidden="true">
-          <circle class="paper" cx="118" cy="22" r="7"/>
-          <circle class="paper" cx="150" cy="12" r="5"/>
-          <circle class="paper" cx="312" cy="30" r="6"/>
-          <path class="none" d="M286 14v14M279 21h14"/>
-          <!-- Pencil -->
-          <g transform="rotate(-12 62 160)">
-            <path class="paper" d="M44 92 L62 54 L80 92 Z"/>
-            <path class="ink" d="M55 69 L62 54 L69 69 Z"/>
-            <rect class="accent" x="44" y="92" width="36" height="128" rx="3"/>
-            <path class="none" d="M62 100v112"/>
-            <rect class="ink" x="44" y="220" width="36" height="22" rx="5"/>
-          </g>
-          <!-- Computer -->
-          <rect class="ink" x="114" y="56" width="190" height="166" rx="22"/>
-          <rect class="paper" x="102" y="44" width="190" height="166" rx="22"/>
-          <rect class="accent" x="124" y="66" width="146" height="108" rx="12"/>
-          <circle class="paper" cx="197" cy="104" r="22"/>
-          <circle class="ink" cx="201" cy="102" r="9"/>
-          <circle class="paper bare" cx="205" cy="98" r="3"/>
-          <path class="paper" d="M162 138 Q197 168 232 138 Z"/>
-          <circle class="paper" cx="128" cy="192" r="6"/>
-          <rect class="ink" x="236" y="189" width="34" height="6" rx="3"/>
-          <rect class="paper" x="172" y="210" width="50" height="20"/>
-          <rect class="paper" x="112" y="230" width="196" height="28" rx="6"/>
-          <path class="none" d="M132 244h18M160 244h18M188 244h18M216 244h18M244 244h44"/>
-          <!-- Mouse -->
-          <path class="none" d="M332 232 C334 200 320 180 304 170"/>
-          <rect class="paper" x="320" y="230" width="24" height="30" rx="12"/>
-          <path class="none" d="M332 230v10"/>
-          <path class="none" d="M20 266H344"/>
+        <svg class="hero-art logo-art" viewBox="0 0 300 300" aria-hidden="true">
+          <circle class="paper" cx="286" cy="112" r="5"/>
+          <circle class="paper" cx="20" cy="250" r="6"/>
+          <path class="none" d="M22 89v17M13.5 97.5h17"/>
+          <!-- HS badge -->
+          <rect class="ink" x="54" y="54" width="220" height="220"/>
+          <rect class="accent" x="40" y="40" width="220" height="220"/>
+          <text class="mark" x="150" y="182" text-anchor="middle">HS</text>
+          <path class="smile" d="M83 201 C117 212 172 214 218 196"/>
+          <!-- Sparkle -->
+          <path class="spark" d="M253 18 C256 35 259 38 276 41 C259 44 256 47 253 64 C250 47 247 44 230 41 C247 38 250 35 253 18 Z"/>
         </svg>
       </div>
 
@@ -501,6 +488,14 @@
       document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') setMenu(false);
       });
+
+      // The small logo joins the name once the big hero logo has scrolled out of view
+      var heroLogo = document.querySelector('.hero-art');
+      if (heroLogo && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          header.classList.toggle('show-logo', !entries[0].isIntersecting);
+        }, { rootMargin: '-64px 0px 0px 0px' }).observe(heroLogo);
+      }
 
       // Highlight the nav link of the section currently in view
       var navLinks = document.querySelectorAll('.site-header nav a[href^="#"]');
