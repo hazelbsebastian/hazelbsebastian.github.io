@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=37">
+  <link rel="stylesheet" href="style.css?v=42">
   <script>
     // Apply a saved theme before the page paints, so it doesn't flash
     try {
@@ -374,13 +374,44 @@
         <h2>Contact</h2>
         <div class="window">
           <div class="window-bar">contact.html</div>
-          <div class="window-body">
-            <p class="contact-line">Have a project or an opportunity in mind? I'd be glad to hear from you.</p>
-            <a class="contact-email" href="mailto:sebastianhazel369@gmail.com">sebastianhazel369@gmail.com</a>
-            <div class="button-row">
-              <a class="button" href="mailto:sebastianhazel369@gmail.com">Email me</a>
-              <a class="button button--plain" href="Resume_Hazel_Sebastian.docx" download>Download résumé</a>
+          <div class="contact-sheet">
+            <div class="contact-intro">
+              <span class="contact-badge">Say hello</span>
+              <h3 class="contact-title">Let's make something <span class="accent">clear and friendly.</span></h3>
+              <p class="contact-line">Have a project or an opportunity in mind? I'd be glad to hear from you.</p>
+              <div class="button-row">
+                <a class="button" href="Resume_Hazel_Sebastian.docx" download>Download résumé</a>
+              </div>
             </div>
+            <ul class="contact-tiles">
+              <li>
+                <a class="contact-tile" href="mailto:sebastianhazel369@gmail.com">
+                  <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg></span>
+                  <span class="tile-text"><small>Email</small><strong>sebastianhazel369@gmail.com</strong></span>
+                  <svg class="tile-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-tile" href="tel:+639563887404">
+                  <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>
+                  <span class="tile-text"><small>Phone</small><strong>0956 388 7404</strong></span>
+                  <svg class="tile-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-tile" href="https://github.com/hazelbsebastian" target="_blank" rel="noopener">
+                  <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span>
+                  <span class="tile-text"><small>GitHub</small><strong>github.com/hazelbsebastian</strong></span>
+                  <svg class="tile-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                </a>
+              </li>
+              <li>
+                <div class="contact-tile contact-tile--static">
+                  <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+                  <span class="tile-text"><small>Based in</small><strong>Ramon, Isabela, Philippines</strong></span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
